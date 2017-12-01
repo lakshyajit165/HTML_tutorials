@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Click the Button to change the image</h2>
+	<button type="button" onclick="myfunction()">HTML</button>
+	<img src="logo_html.png" id="image">
+	<button type="button" onclick="myfunction()">CSS</button>
+	<script>
+	  function myfunction(){
+	    var track="h";
+		if(track=="h"){
+            document.getELementById('image').innerHTML="logo_css.png";
+            track="c";			
+		 }
+		 if(track=="c"){
+		    document.getElementById('image').innerHTML="logo_html.png";
+			track="h";
+		 }
+	  }
+	</script>
+  </body>
+</html>

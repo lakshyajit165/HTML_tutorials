@@ -1,0 +1,24 @@
+#customers{
+	font-family:Tekton Pro;
+	border-collapse:collapse;
+	
+}
+#customers th{
+	color:white;
+	background-color:black;
+	padding:20px;
+	text-align:center;
+}
+#customers tr,td{
+	text-align:center;
+	border:1px solid black;
+}
+#customers tr:nth-child(even){
+	background-color:#f2f2f2;
+}
+#customers tr:hover{
+	background-color:#dddddd;
+}
+#customers td{
+	padding:15px;
+}

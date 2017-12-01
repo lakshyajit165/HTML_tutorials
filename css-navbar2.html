@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+	   body{
+	     margin:0;
+	   }
+	  .sidenav{
+	    list-style-type:none;
+		position:fixed;
+		background-color:#f1f1f1;
+		width:25%;
+		height:100%;
+        overflow:auto;
+        margin:0;
+        padding:0;		
+	  }
+	  .sidenav li a{
+	    text-decoration:none;
+		color:black;
+		display:block;
+		padding:8px 16px;
+		text-align:center;
+	  }
+	  .sidenav li a.active{
+	     background-color:#FFBF00;
+		 color:white;
+	  }
+	  .sidenav li a:hover:not(.active){
+	    background-color:#bdbdbd;
+	  }
+	  .content{
+	    margin-left:25%;
+	  }
+	  
+	  
+	  @media screen and (max-width:900px){
+	    .sidenav{
+		   width:100%;
+		   height:auto;
+		   position:relative;
+		}
+		.sidenav li a{
+		  float:left;
+		  padding:15px;
+		  display:block;
+		}
+		.content{
+		  margin-left:0;
+		}
+	  }
+	  @media screen and (max-width:400px){
+	    .sidenav li a{
+		  float:none;
+		  text-align:center;
+		}
+	  }
+	</style>
+	<script>
+	  function myfunction(){
+	    document.querySelectAll("p.red").style.fontColor = "red"; 
+	  }
+	</script>
+  </head>
+  <body>
+    <ul class="sidenav">
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">News</a></li>
+	  <li><a href="#about">About</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<div class="content" style="padding:10px;">
+	  <h2>Responsive Sidenav Example</h2>
+	  <p class="red">This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
+	  <p class="red">We have also added a media query for screens that are 400px or less , which will vertically stack and center the navigation links.</p>
+	  <p class="red">You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+	
+    
+	  <h3>Resize the browser window to see the effect.</h3>
+	  <button onclick="myfunction()">Highlight Links</button>
+	</div>
+  </body>
+</html>
